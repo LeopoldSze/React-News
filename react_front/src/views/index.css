@@ -1,0 +1,313 @@
+/*清除浮动*/
+.clearFix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*头部logo*/
+.ant-layout-header{
+    width: 100%;
+    background: #303D4A;
+    opacity: 0.7;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+}
+.custom-icons-list .anticon-alert{
+    font-size: 40px;
+    margin-right: 5%;
+}
+.logo{
+    font-size: 40px;
+    color: #3E9BB9;
+    font-weight:bold;
+}
+.logo:hover{
+    color: #00aced;
+}
+/*登录*/
+#loginArea{
+    text-align: center;
+}
+#loginBtn{
+    font-size: 20px;
+    color: #3E9BB9;
+    cursor: pointer;
+}
+#userPhoto{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/*退出*/
+#exit{
+    color: #DC4E41;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/*侧边栏*/
+.ant-layout-sider{
+    height: 0px;
+    background: transparent;
+    line-height: 0px;
+    z-index: 2;
+    text-align: center;
+}
+#sideBar{
+    position: fixed;
+    top: 150px;
+    left: -100px;
+    max-width: 200px;
+}
+#sideBar:hover{
+    left: 0px;
+}
+#links{
+    width: 60%;
+    height: 100%;
+    background: #333;
+    opacity: 0.6;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+#links li:hover{
+    background: #ccc;
+}
+#links a{
+    color: #fff;
+    font-size: 17px;
+}
+#links a:hover{
+    color: #f00;
+    font-weight: bold;
+}
+
+
+/*主体*/
+.ant-layout-content{
+    position: relative;
+    top: 65px;
+}
+/* 1----轮播图 */
+.slide img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+.slide .simInfo{
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    bottom: 15%;
+}
+.slick-dots li button{
+    height: 10px;
+}
+/* 2----时间树*/
+.slide .ant-timeline{
+    margin-top: 10px;
+}
+.slide .ant-timeline-item{
+    margin-bottom: 10px;
+}
+.slide .ant-timeline h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.slide .ant-timeline a{
+    font-size: 18px;
+    color: #6A737D;
+}
+.slide .ant-timeline a:hover{
+    color: #00aced;
+}
+/*3--欢迎模块*/
+.welcome{
+    margin-bottom: 30px;
+}
+.welcome h2{
+    font-size: 35px;
+    font-weight: lighter;
+    text-align: center;
+    margin: 20px auto;
+}
+.welcome p,
+.welcome .brand span{
+    color: #999;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: justify;
+    text-indent: 2em;
+}
+.welcome .brand span{
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+    margin-top: 130px;
+}
+.welcome .brand img{
+    float: left;
+    width: 50%;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+/*4--分类模块*/
+.kinds .ant-card{
+    border: none;
+    position: relative;
+    width: 45%;
+    display: inline-block;
+    margin: 30px 2% 30px 3%;
+}
+.kinds h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: lighter;
+}
+.kinds p{
+    text-align: center;
+    font-size: 20px;
+    color: #999;
+    font-weight: lighter;
+}
+.kinds img{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+.kinds .ant-card-body {
+    position: absolute;
+    left: 40%;
+    top: 36%;
+}
+.kinds .ant-card-body span{
+    display: inline-block;
+    color: #fff;
+    font-size: 45px;
+    font-weight: lighter;
+    opacity: 0.5;
+}
+.kinds .ant-card-body span:hover{
+    opacity: 1;
+    color: #66dd00;
+}
+
+
+/*新闻模块*/
+#load{
+    margin-left: 45%;
+    margin-top: 30px;
+    background: #3E9BB9;
+}
+.ant-list-item{
+    border: 1px solid #999;
+    background: #303D4A;
+    color: #888;
+}
+.ant-list-item-main{
+    padding-left: 10%;
+}
+.ant-list-item-meta-title a{
+    font-size: 20px;
+    color: #fff!important;
+}
+.ant-list-item-extra{
+    margin-right: 5%;
+}
+.ant-list-item-extra img{
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+
+/*详细内容*/
+.detailPart{
+    padding-top: 30px;
+}
+.newsTitle{
+    font-size: 30px;
+    text-align: center;
+}
+.firstPar,
+.secondPar{
+    font-size: 18px;
+    color: #999;
+    text-indent: 2em;
+    margin: 30px 0px;
+}
+.detailPart img{
+    width: 80%;
+    margin-left: 10%;
+    opacity: 0.9;
+}
+p{
+    color: #00aced;
+    cursor: pointer;
+}
+.init{
+    color: #303D4A;
+}
+.init .ant-tag{
+    margin-left: 1%;
+    margin-right: 3%;
+}
+
+
+/*底部*/
+.ant-layout-footer{
+    padding: 0px!important;
+    margin-top: 80px;
+}
+.footerInfo{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: #324D5B;
+    text-align: center;
+}
+.footerInfo span{
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+}
+
+/*分享*/
+.icons-list{
+    display: inline-block;
+    width: 12%;
+    border: 1px solid #303D4A;
+    border-radius: 10px;
+}
+.icons-list i{
+    font-size:30px;
+    margin-right: 8%;
+}
+.icons-list i:first-of-type{
+    color: #DC4E41;
+    margin-left: 8%;
+}
+.icons-list i:nth-of-type(2){
+    color: #00aced;
+}
+.icons-list i:nth-of-type(3){
+    color: #69BF95;
+}
+.icons-list i:first-of-type:hover{
+    color: #ff0000;
+}
+.icons-list i:nth-of-type(2):hover{
+    color: #06f;
+}
+.icons-list i:nth-of-type(3):hover{
+    color: #6d0;
+}
